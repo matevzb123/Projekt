@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-                    if(country.CountryName.startsWith(textDrzava.text.toString()) && country.CountryPopulation.startsWith(textVelikost.text.toString()) && country.CountryArea.orEmpty().startsWith(textPopulacija.text.toString()) )
+                    if(country.CountryName.startsWith(textDrzava.text.toString().trim()) && country.CountryPopulation.startsWith(textVelikost.text.toString().trim()) && country.CountryArea.orEmpty().startsWith(textPopulacija.text.toString().trim()) )
                         {
                             val MojModel = Model(country.CountryName, country.CountryPopulation, country.CountryArea, country.CountryFlag)
                             list.add(MojModel)
